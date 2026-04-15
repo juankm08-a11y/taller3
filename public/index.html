@@ -6,12 +6,18 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <input type="email" placeholder="Ingresa tu correo" name="email" />
+    <form action="/login" method="POST">
+      <input
+        type="email"
+        placeholder="Ingresa tu correo"
+        name="email"
+        required
+      />
       <input
         type="password"
         placeholder="Ingresa tu contraseña"
         name="password"
+        required
       />
       <button type="submit">Enviar</button>
     </form>
