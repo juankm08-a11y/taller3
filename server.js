@@ -20,7 +20,7 @@ router.post("/login", (req, res) => {
 });
 
 router.get("/home", (req, res) => {
-  res.send("Bienvenido a mi pagina");
+  res.sendFile(__dirname + "/public/home.html");
 });
 
 app.listen(PORT, () => {
